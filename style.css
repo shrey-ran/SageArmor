@@ -466,6 +466,31 @@ a {
     margin-right: 0.5rem;
 }
 
+/* Team section */
+.team-grid {
+    margin-top: 2rem;
+}
+
+.member-usn {
+    margin-bottom: 0.25rem;
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.member-role {
+    margin-bottom: 1rem;
+    color: var(--brand-secondary);
+    font-weight: 600;
+}
+
+.member-list {
+    margin-top: 0.5rem;
+}
+
+.member-list li {
+    color: var(--text-secondary);
+}
+
 /* Animations */
 .fade-in-up {
     opacity: 0;
