@@ -471,6 +471,10 @@ a {
     margin-top: 2rem;
 }
 
+.team-grid-four {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
 .member-usn {
     margin-bottom: 0.25rem;
     color: var(--text-primary);
@@ -489,6 +493,18 @@ a {
 
 .member-list li {
     color: var(--text-secondary);
+}
+
+@media (max-width: 1100px) {
+    .team-grid-four {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 650px) {
+    .team-grid-four {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Animations */
