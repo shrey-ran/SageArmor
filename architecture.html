@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Architecture details of the Digital Security Engineer leveraging AWS Bedrock.">
+    <title>Architecture | SageArmor AI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar glass">
+        <div class="logo">
+            <span class="logo-icon">🛡️</span>
+            <span class="logo-text">SageArmor AI</span>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="#intelligence-loop">Intelligence Loop</a>
+            <a href="#aws-native">AWS Foundation</a>
+            <a href="#impact">Impact</a>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="glow-bg"></div>
+        <div class="container hero-content text-center">
+            <h1 class="fade-in-up">The Intelligence Loop <br>& <span class="accent-text">Architecture</span></h1>
+            <p class="subtitle fade-in-up delay-1">Powered by Amazon Bedrock (Claude 3.5 Sonnet) and multi-agent reasoning.</p>
+        </div>
+    </header>
+
+    <main>
+        <section id="intelligence-loop" class="section">
+            <div class="container">
+                <h2 class="section-title reveal">How the GenAI Solution Works</h2>
+                <div class="process-steps grid grid-3">
+                    <div class="card glass interactive step reveal">
+                        <div class="step-num glow-text">01</div>
+                        <h3>Structured Parsing</h3>
+                        <p>Automatically converts raw code and YAML/Terraform configs into structured formats before AI analysis, ensuring high deterministic accuracy.</p>
+                    </div>
+                    <div class="card glass interactive step reveal delay-1">
+                        <div class="step-num glow-text">02</div>
+                        <h3>Knowledge-Augmented Logic</h3>
+                        <p>Uses RAG to inject live AWS Best Practices and CIS Benchmarks into the agent's decision-making process.</p>
+                    </div>
+                    <div class="card glass interactive step reveal delay-2">
+                        <div class="step-num glow-text">03</div>
+                        <h3>Hybrid Detection</h3>
+                        <p>Combines rapid rule-based checks with LLM reasoning to confirm "exploitability," virtually eliminating false positives.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="aws-native" class="section dark-section">
+            <div class="container">
+                <h2 class="section-title reveal">AWS Native Foundation</h2>
+                
+                <div class="architecture-visual container reveal">
+                    <div class="arch-node trigger glass">
+                        <strong>EventBridge</strong><br><small>Pull Request Event</small>
+                    </div>
+                    <div class="arch-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg></div>
+                    <div class="arch-layer-grid grid grid-3">
+                        <div class="arch-box glass interactive">
+                            <span class="icon">🧠</span>
+                            <h4>Amazon Bedrock</h4>
+                            <p>Claude 3.5 serving as reasoning brain</p>
+                        </div>
+                        <div class="arch-box glass interactive">
+                            <span class="icon">🔐</span>
+                            <h4>IAM Access Analyzer</h4>
+                            <p>Identity policy evaluation</p>
+                        </div>
+                        <div class="arch-box glass interactive">
+                            <span class="icon">📚</span>
+                            <h4>Knowledge Bases</h4>
+                            <p>RAG with CIS & NIST Standards</p>
+                        </div>
+                    </div>
+                    <div class="arch-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg></div>
+                    <div class="arch-layer-grid grid grid-2">
+                        <div class="arch-box glass highlight">
+                            <h4>Red/Blue Team Validation</h4>
+                            <p>Adversarial simulations verify actual exploitability</p>
+                        </div>
+                        <div class="arch-box glass highlight">
+                            <h4>Self-Healing Fix</h4>
+                            <p>Generates tested code patches & IAM updates</p>
+                        </div>
+                    </div>
+                    <div class="arch-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg></div>
+                    <div class="arch-node output glass">
+                        <strong>Developer Workflow</strong><br><small>Feedback & Patch via GitHub/GitLab</small>
+                    </div>
+                </div>
+
+                <div class="tech-stack-list reveal mt-4">
+                    <h3 class="accent-text">The Agentic Infrastructure</h3>
+                    <ul class="clean-list">
+                        <li><strong>Intelligence Loops:</strong> LangGraph & AWS Step Functions for deterministic, auditable workflows.</li>
+                        <li><strong>Security Evaluation APIs:</strong> AWS IAM Access Analyzer and AWS Security Hub.</li>
+                        <li><strong>Engine Guardrails:</strong> Bedrock Guardrails for proactive prompt injection defense.</li>
+                        <li><strong>Integration Core:</strong> Model Context Protocol (MCP) connecting agents to code repos and tools.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="impact" class="section">
+            <div class="container">
+                <h2 class="section-title reveal">Impact & Economics</h2>
+                <div class="impact-grid grid grid-2">
+                    <div class="card glass outline reveal">
+                        <div class="icon-large mb-2">⚡</div>
+                        <h3 class="gradient-text">Velocity & Effort Reduction</h3>
+                        <p>Mean Time to Remediate (MTTR) drops from <strong>days to seconds</strong>. Lean security teams see a <strong>96% reduction in manual review effort</strong>.</p>
+                    </div>
+                    <div class="card glass outline reveal delay-1">
+                        <div class="icon-large mb-2">🎯</div>
+                        <h3 class="gradient-text">Accuracy > 95%</h3>
+                        <p>Target >95% reduction in false positives. We don't just flag bugs — we use reasoning to confirm real exploitability.</p>
+                    </div>
+                    <div class="card glass outline reveal delay-2">
+                        <div class="icon-large mb-2">💸</div>
+                        <h3 class="gradient-text">Cost Avoidance</h3>
+                        <p>AI-powered agentic prevention saves an average of <strong>$1.9M per breach prevented</strong>.</p>
+                    </div>
+                    <div class="card glass outline reveal delay-3">
+                        <div class="icon-large mb-2">🚀</div>
+                        <h3 class="gradient-text">Compliance Velocity</h3>
+                        <p>Accelerates SOC 2 Type II readiness by automating evidence collection and continuous policy enforcement.</p>
+                    </div>
+                </div>
+
+                <div class="roadmap-banner glass reveal mt-4 text-center p-4">
+                    <h3>24-Hour Implementation Roadmap</h3>
+                    <ul class="inline-timeline">
+                        <li><span class="time">H 0-6</span> Infrastructure</li>
+                        <li><span class="time">H 6-12</span> Intelligence</li>
+                        <li><span class="time">H 12-18</span> Reasoning</li>
+                        <li><span class="time">H 18-24</span> Integration</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="glass footer">
+        <div class="container footer-content">
+            <div class="footer-logo">🛡️ SageArmor AI</div>
+            <p>Hackathon Prototype &mdash; Automating Cloud Security</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
