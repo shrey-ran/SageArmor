@@ -33,18 +33,34 @@
         </div>
         
         <div class="hero-graphic fade-in delay-3">
-            <div class="code-window glass">
-                <div class="window-header">
+            <div class="dashboard-mock glass">
+                <div class="dashboard-topbar">
                     <span class="dot red"></span>
                     <span class="dot yellow"></span>
                     <span class="dot green"></span>
+                    <span class="topbar-title">AI Security Review Agent</span>
                 </div>
-                <div class="code-content">
-                    <p><span class="code-keyword">struct</span> <span class="code-class">PullRequest</span> { ... }</p>
-                    <p class="code-comment">// AI Scanning Initiated...</p>
-                    <p class="code-success">> No theoretical risks found.</p>
-                    <p class="code-success">> Exploitability: 0% confirmed.</p>
-                    <p class="code-success">> Code patch generated & verified.</p>
+
+                <div class="dashboard-body">
+                    <div class="score-card glass">
+                        <p class="score-label">Overall Security Score</p>
+                        <div class="score-value">82<span>/100</span></div>
+                        <div class="score-meter">
+                            <div class="score-fill"></div>
+                        </div>
+                    </div>
+
+                    <div class="review-card glass">
+                        <p class="review-title">Active Pull Request Review</p>
+                        <div class="issue-banner">Public S3 Bucket Vulnerability Detected</div>
+                        <pre class="code-sample"><code>resource "aws_s3_bucket" "data_assets" {
+  acl = "public-read-write"  // critical
+}</code></pre>
+                        <div class="suggestion-box">
+                            Found a security breach in IAM policy. Switch to private ACL and apply least privilege.
+                        </div>
+                        <div class="fix-box">Suggested Fix: acl = "private"</div>
+                    </div>
                 </div>
             </div>
         </div>
